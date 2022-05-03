@@ -31,9 +31,8 @@ this.foodAmount = function(amount){
        alert ('Нельзя насыпать в миску корма больше, чем' +' ' + max + 'гр.');
     }
     else {
-       alert ( 'Введите значение! ' );
+       foodAmount = amount;
     }
-    foodAmount = amount;
     };
 
 }
