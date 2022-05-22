@@ -80,11 +80,11 @@ function checkPalindrome(randomStr){
 
 
       //задание 6
-      function powerOfTwo(x) {
+      function powOfTwo(x) {
         return (Math.log(x)/Math.log(2)) % 1 === 0;
     }
-    console.log(powerOfTwo(5));
-    console.log(powerOfTwo(16));
-    console.log(powerOfTwo(8));
+    console.log(powOfTwo(5));
+    console.log(powOfTwo(16));
+    console.log(powOfTwo(8));
 
    

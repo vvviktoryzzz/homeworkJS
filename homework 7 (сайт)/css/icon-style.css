@@ -27,6 +27,36 @@
     height: 10px;
     margin-left: 420px;
 }
+@media (max-width: 990px) {
+    .chat{
+        margin-left: 300px;
+    }
+    .chat1{
+        margin-left: 270px ;
+    }
+    
+    
+    
+}
+@media (max-width: 640px) {
+    .chat{
+        margin-left: 100px;
+    }
+    .chat1{
+        margin-left: 70px ;
+    }
+}
+
+@media (max-width: 400px) {
+
+    .chat{
+        margin-left: 50px;
+    }
+    .chat1{
+        margin-left: 20px ;
+    }
+    
+}
 .clock{
     width: 10px;
     height: 10px;
