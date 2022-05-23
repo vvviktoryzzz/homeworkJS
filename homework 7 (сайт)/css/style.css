@@ -2,26 +2,28 @@
     margin: 0;
     padding: 0;
   }
+  
 body{
     background-color: #F2F4F8;
     font-family: Arial;
     font-size: 15px;
+    height: 100%;
 
 }
 header {
     background-color: #2D313D;
     max-height: 70px;
-    
     max-width: 100%;
  
 }
 .style-header{
-    margin-left: auto;
+    
     margin-top: auto;
     display: flex;
+
 }
 
-.text_header1{
+.text_NewYork{
     color: #727989;
     text-decoration: underline dashed;
     margin-top: 1.7%;
@@ -57,50 +59,22 @@ header {
     height: 100%;
     box-shadow: 2px 2px 14px rgb(131, 129, 129);;
     max-width: 1000px;
-    height: 100%;
     margin-left: auto;
     margin-right: auto;
     background-color: rgb(255, 255, 255);
 }
-@media (max-width: 1000px) {
-    .main-box{
-        max-width: 970px;
-        
-    }
-    
-}
+
 .plus{
     width: 10px;
     height: 10px;
     margin-top: 24px;
     margin-left: 250px;
 }
-@media (max-width: 992px) {
-    .main-box, .gray{
-        max-width: 750px;
-        
-    }
-    .plus{
-       margin-left: auto;
-    }
-    .text-gray{
-        margin-left: auto;
-    }
-    .setting{
-        display: none;
-    }
-    
-}
 
-@media (max-width: 767px) {
-    .main-box{
-        max-width: none;
-    }
-    
-}
 .box-left{
     max-width: 190px;
     height: 100%;
+    
     
 }
 
@@ -158,43 +132,8 @@ li > a:hover{
     height: 70px;
     display:flex;
     padding-top: 5px;
+    max-width: 1000px;
     
-}
-@media (max-width: 1000px) {
-    .gray{
-        max-width: 750px;
-    }
-    .text_header1{
-
-            font-size: 10px;
-            margin-left: 20%;
-    
-        }
-        .plus{
-            margin-left: 100px;
-        }
-        .logo{
-            margin-left: 150px;
-        }
-   
-    
-}
-@media (max-width: 740px) {
-    .gray{
-        max-width:none;
-    }
-    
-        .plus{
-            display: none;
-        }
-      .text-gray{
-          display: none;
-      }  
-      .form-style{
-        margin-left: 70px;
-      }
-
-      
 }
 
 .text-gray{
@@ -243,87 +182,7 @@ li > a:hover{
     margin-right:30px; 
     text-align: justify;
 }
-@media (max-width: 900px) {
-    .comment, .text-comment, .text-comment1{
-        max-width: 750px;
-    }
-    
-    
-}
-@media (max-width: 767px) {
-    .comment, .text-comment{
-        max-width: none;
-    }
-   
-}
 
-@media (max-width: 600px) {
-
-    
-    .box-left{
-        display: none;
-    }
-    
-}
-@media (max-width: 400px) {
-
-    
-    .flex-box{
-        display: none;
-    }
-    
-}
-@media (max-width: 997px) {
-    .search, .text_header, .photo_header, .email, .icon, .notifications{
-        font-size: 10px;
-        margin-left: 1%;
-        margin-top: auto;
-        margin-bottom: auto;
-        }
-        .search{
-            display: none;
-        }
-    }
-    
-    @media (max-width: 690px) {
-        .text_header1, .search,  .email, .icon{
-            display: none;
-    
-        }
-    }
-        @media (max-width: 500px) {
-            .box-right{
-                position: relative;}
-        
-            }
-
-            
-              
-        .text_header{
-            margin-left: 25px;
-            font-size: 10px;
-            margin-left: 50px;
-            
-        }
-        .logo{
-            margin-left: 200px;
-            margin-bottom: 5px;
-            
-        }
-        .notifications{
-            display: none;
-        }
-        
-
-
-
-
-@media (max-width: 600px) {
-    .text_header1, .search{
-        display: none;
-    }
-    
-}
 .tag{
     margin-top: 10px;
     font-size: 13px;
@@ -391,7 +250,6 @@ button:before {
     border: #727989 1px solid;
     border-radius: 5px;
     padding: 10px;
-   
     margin-top: 25px;
     transition: 0.5s;
     display: flex;
@@ -473,16 +331,16 @@ footer
 {
     display: flex;
     background-color: #f2f4f8;
-    margin-top: 50px;
-    width: 100%;
     font-size: 13px;
+    width: 100%;
+    margin-top: 50px;
+    bottom: 0;
     
     
 }
 .style-footer{
-    margin-top: 10px;
-    margin-left: 10px;
-    margin-bottom: 10px;
+    margin: 10px 10px 10px;
+
     
 }
 .footer2{
@@ -493,7 +351,136 @@ footer
     padding-left: 10px;
     color: #727989;
     border-top: #9a9fa9 1px solid;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding: 10px 0;
+    bottom: 0;
+   
     
+        
 }
+
+/*-----------------------------ADAPTIVE----------------------------------------------------*/
+
+    @media (max-width: 1000px) {
+        .main-box{
+            max-width: 970px;
+            
+        }
+        .gray{
+            max-width: 750px;
+        }
+        .text_NewYork{
+
+                font-size: 10px;
+                margin-left: 20%;
+        
+            }
+        .plus{
+            margin-left: 100px;
+        }
+        .logo{
+            margin-left: 150px;
+        }
+    }
+
+    @media (max-width: 992px) {
+        .main-box, .gray{
+            max-width: 750px;
+            
+        }
+        .plus{
+        margin-left: auto;
+        }
+        .text-gray{
+            margin-right: 20px;
+        }
+        .setting{
+            display: none;
+        }
+        .search, .text_header, .photo_header, .email, .icon, .notifications{
+            font-size: 10px;
+            margin-left: 1%;
+            margin-top: auto;
+            margin-bottom: auto;
+            }
+            .search{
+                display: none;
+            }
+    }
+    @media (max-width: 900px) {
+        .comment, .text-comment, .text-comment1{
+            max-width: 750px;
+        }
+        
+        
+    }
+    @media (max-width: 767px) {
+        .main-box{
+            max-width: none;
+        }
+        .comment, .text-comment{
+            max-width: none;
+        }
+    
+        
+    }
+
+
+    @media (max-width: 740px) {
+        .gray{
+            max-width:none;
+        }
+        
+            .plus{
+                display: none;
+            }
+        .text-gray{
+            display: none;
+        }  
+        .form-style{
+            margin-left: 70px;
+        }
+
+        
+    }
+
+    
+    @media (max-width: 690px) {
+        .text_NewYork, .search,  .email, .icon, .notifications{
+            display: none;
+    
+        }
+    }
+
+    @media (max-width: 600px) {
+
+        
+        .box-left{
+            display: none;
+
+        }
+        .text_NewYork, .search{
+            display: none;
+        }
+        
+    }
+
+        @media (max-width: 500px) {
+            body{
+               min-width: 500px;}
+
+            .text_header{
+                font-size: 10px;
+                margin-left: 50px;  
+            }
+            .logo{
+                margin-left: 200px;
+                margin-bottom: 5px;   
+            }
+            .notifications{
+                display: none;
+            }
+            .gray{
+                min-width: 500px;
+            }
+           
+        }

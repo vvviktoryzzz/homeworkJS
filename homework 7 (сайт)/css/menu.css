@@ -6,6 +6,7 @@
 
   }
   
+  
   .topnav a {
     float: left;
     display: block;
@@ -24,6 +25,10 @@
   
   .topnav a.active {
     background-color: #727989;
+    color: white;
+  }
+  .topnav a.active:hover {
+    background-color: #2d3c5e;
     color: white;
   }
   
@@ -67,4 +72,10 @@
   .topnav{
     padding-left: 70px;
   }
+}
+@media (max-width: 600px) {
+  .topnav a.active{
+   display: none;
+  }
+  
 }
