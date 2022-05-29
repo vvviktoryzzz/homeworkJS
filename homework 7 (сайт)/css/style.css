@@ -2,12 +2,12 @@
     margin: 0;
     padding: 0;
   }
-  
+
 body{
     background-color: #F2F4F8;
     font-family: Arial;
     font-size: 15px;
-    height: 100%;
+    min-height: 100%;
 
 }
 header {
@@ -43,8 +43,8 @@ header {
     margin-left: 10px;
 }
 .logo{
-    width: 7%;
-    height: 7%;
+    max-width: 7%;
+    max-height: 7%;
     margin-left: 250px;
     margin-top: 10px;
 }
@@ -324,7 +324,7 @@ button:before {
 }
 
 .box-right{
-    height: 100%;
+    
     border-left: #b1b7c7 1px solid; ;
 }
 footer
@@ -334,7 +334,7 @@ footer
     font-size: 13px;
     width: 100%;
     margin-top: 50px;
-    bottom: 0;
+    
     
     
 }
@@ -343,7 +343,7 @@ footer
 
     
 }
-.footer2{
+.footer-bottom{
     display: flex;
     background-color: #f2f4f8;
     margin-top: 0;
@@ -351,15 +351,19 @@ footer
     padding-left: 10px;
     color: #727989;
     border-top: #9a9fa9 1px solid;
+    height: 50px;
     padding: 10px 0;
-    bottom: 0;
+    
+    
    
     
         
 }
 
-/*-----------------------------ADAPTIVE----------------------------------------------------*/
 
+
+/*-----------------------------ADAPTIVE----------------------------------------------------*/
+  
     @media (max-width: 1000px) {
         .main-box{
             max-width: 970px;

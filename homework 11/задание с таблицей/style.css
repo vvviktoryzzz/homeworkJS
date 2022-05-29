@@ -1,0 +1,8 @@
+td{
+    min-width: 170px;
+    height: 30px;
+    border: 1px black solid;
+}
+#addRowTd{
+    text-align: center;
+}
