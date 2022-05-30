@@ -11,27 +11,17 @@ container.appendChild(secondPar);
 
     var button = document.getElementsByTagName('button');
     button[0].onclick = function () {
-      var link1 = firstPar.children[0],
-          link2 = firstPar.children[1];
-    
-      link1.style.color = "pink";
-      link2.style.color = "pink";
-      link1.style.fontSize = "25px";
-      link2.style.fontSize = "25px"
+      for (var i = 0;  ; i++) {
+        var links = firstPar.children[i];
+      links.classList.add('changed');
+    }
     }
     
-    var link3 = secondPar.children[0],
-        link4 = secondPar.children[1];
     
-    secondPar.addEventListener('click', function (links) {
-      links.preventDefault();
+      secondPar.onclick =  function () {
+        event.preventDefault();
+        if (event.target.tagName == 'A') {
+          alert(event.target.getAttribute('href'));    
+        }
+      };
     
-      if (links.target == link3) {
-        alert(link3.getAttribute('href'));
-      }
-    
-      if (links.target == link4) {
-        alert(link4.getAttribute('href'));
-      }
-      
-    });
