@@ -1,0 +1,40 @@
+ТАЙМИНГ В JS
+  - http://web.archive.org/web/20190405104500/http://learn.javascript.ru/settimeout-setinterval (до главы "Минимальная
+    задержка таймера")
+
+  Практическое задание 1:
+    Написать функцию-таймаут, выводящую в консоль любую информацию через 5 секунд.
+
+  Практическое задание 2:
+    Написать функцию-интервал, выводящую в консоль целые числа от 1 до 5 включительно каждые 2 секунды. setTimeout не
+    использовать.
+
+EVENT LOOP
+  - Javascript - однопоточный (один стэк вызовов) и синхронный язык программирования (пока выполняется одно действие -
+    другие не выполняются)
+  - https://stasonmars.ru/javascript/polnoe-ponimanie-syncronnogo-i-asyncronnogo-javascript-s-async-await/
+  - https://habr.com/en/company/ruvds/blog/340508/
+  - Очередь (Queue) - "First-in - first-out"
+  - Стэк (Stack) - "First-in - last-out"
+  - Живой пример работы EL -
+    http://latentflip.com/loupe/?code=JC5vbignYnV0dG9uJywgJ2NsaWNrJywgZnVuY3Rpb24gb25DbGljaygpIHsKICAgIHNldFRpbWVvdXQoZnVuY3Rpb24gdGltZXIoKSB7CiAgICAgICAgY29uc29sZS5sb2coJ1lvdSBjbGlja2VkIHRoZSBidXR0b24hJyk7ICAgIAogICAgfSwgMjAwMCk7Cn0pOwoKY29uc29sZS5sb2coIkhpISIpOwoKc2V0VGltZW91dChmdW5jdGlvbiB0aW1lb3V0KCkgewogICAgY29uc29sZS5sb2coIkNsaWNrIHRoZSBidXR0b24hIik7Cn0sIDUwMDApOwoKY29uc29sZS5sb2coIldlbGNvbWUgdG8gbG91cGUuIik7!!!PGJ1dHRvbj5DbGljayBtZSE8L2J1dHRvbj4%3D
+  - setTimeout(func, 0) используется для того, чтобы какое-либо действие выполнилось последним в рамках функции
+
+  Практическое задание - см. скрины
+
+ДОМАШНЕЕ ЗАДАНИЕ 13
+  Задание 1:
+    Добавить на страницу кнопку "Загрузить список пользователей".
+    По клику на нее осуществляется AJAX (GET) запрос на https://reqres.in (List Users).
+    В случае успешного получения данных:
+      - ДИНАМИЧЕСКИ добавить на страницу вкладки "Пользователь 1", "Пользователь 2" и т.д.
+      (в соотв. с количеством пользователей)
+      - сделать первую вкладку активной и показать под ней блок с информацией о пользователе
+      - вкладки должны иметь возможность переключаться и отображать соответствующие данные
+      - полученные данные должны записываться в LocalStorage *
+      - по клику на кнопку должна происходить проверка, если данные есть в LocalStorage, не отправлять AJAX запрос, а
+        сразу отрисовывать их *
+    В случае ошибки получения данных (протестировать можно, изменив url запроса как в примере с урока):
+      - отрисовать на странице сообщение о том, что данные не получены, в произвольном виде
+    Перед отправкой ОБЯЗАТЕЛЬНО (!!!) порефакторить код и протестировать ваше приложение на работоспособность и
+    максимально на отсутствие багов.
